@@ -20,9 +20,26 @@ public class Topic {
     private Date startdate;
     private Date finishingdate;
     private boolean finished;
-
+    private Date alarm;
+    private boolean isSet;
 
     public Topic(){}
+
+    public Date getAlarm() {
+        return alarm;
+    }
+
+    public void setAlarm(Date alarm) {
+        this.alarm = alarm;
+    }
+
+    public boolean isSet() {
+        return isSet;
+    }
+
+    public void setSet(boolean set) {
+        isSet = set;
+    }
 
     public Integer getId() {
         return id;
